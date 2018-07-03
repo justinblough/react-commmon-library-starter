@@ -1,0 +1,25 @@
+@import "../../styles/sass/common.sass"
+.note
+  position: relative;
+  display: flex;
+  box-sizing: border-box
+  flex-direction: column
+  min-width: 0
+  word-wrap: break-word
+  background-color: #fff
+  border-radius: 3px
+  border: 1px solid $beige
+  &__body
+    flex: 1 1 auto
+    padding: 1.42rem 1.78rem
+    background-color: $white
+  &__header
+    @include flexbox()
+    border: 1px solid $beige
+    margin: -1px -1px 0.75rem -1px
+    padding: 0.35rem
+  &__textarea
+    width: 100%
+    resize: vertical
+  &__footer
+    padding: 0 1.78rem 1.42rem 1.78rem
