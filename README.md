@@ -11,18 +11,36 @@ A common library of styles and components for the frontend clients
 
 **React Components**
 ```
-import {someComponent} from 'common-library'
+import components from 'common-library'
+// OR
+import {SomeComponent} from 'common-library/components'
 ```
 **Common Sass**
 Contains common styling, used by components for sass mixins and variables, and storybook.
 
 Intended to be imported into a client sass and extended as the base.
 ```
-@import "~common-library/styles/common.sass"
+@import "~common-library/dist/styles/common.sass"
 ```
 
 
 ## Getting Started
+
+ **StoryBook** [website](https://storybook.js.org/)
+
+ ```
+ yarn run storybook
+ ```
+ http://localhost:9001
+
+ Add `*.story.js` with the component and you can use the story to develop the component in an isolated environment.
+
+
+ **Running A Build**
+
+ ```
+ yarn run dist
+ ```
 
 ### Reference Links
 - [Making of a component library for React](https://hackernoon.com/making-of-a-component-library-for-react-e6421ea4e6c7)

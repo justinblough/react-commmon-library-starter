@@ -1,4 +1,4 @@
-import * as components from './dist/umd/components'
+import * as components from './dist/components'
 import {commonStylesWebpack} from './dist/styles/index.js'
 export {
   components,

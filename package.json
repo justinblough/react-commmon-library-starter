@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run dist:clean && npm run dist:build",
+    "dist": "npm run dist:clean && npm run dist:build",
     "dist:clean": "rm -rf ./dist",
     "dist:build": "NODE_ENV=development rollup -c tools/rollup/rollup.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",

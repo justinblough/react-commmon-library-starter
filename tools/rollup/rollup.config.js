@@ -41,7 +41,7 @@ export default [
   {
     input: input,
     output: {
-      file: `dist/umd/${name}.js`,
+      file: `dist/components/index.js`,
       name: name,
       format: 'umd',
       globals: globals,
@@ -58,7 +58,7 @@ export default [
       babel(babelOptions),
       copy([
   //    { files: 'src/*.{html,css}', dest: 'dist' },
-      { files: 'src/styles/sass/**.*', dest: 'dist/styles/' },
+      { files: 'src/styles/sass/**/*', dest: 'dist/styles/' },
     ], { verbose: true })
     ],
   }
